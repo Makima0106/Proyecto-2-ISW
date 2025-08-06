@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>User Login</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_login.css" />
+    </head>
+    <body class="contenedor_grid_1">
+        <div class="contenedor_seccion_login">
+            <header class="parte_superior">
+                <h1 class="titulo_logo">
+                    <img
+                        src="images/Aventones.png"
+                        alt="logo"
+                        class="imagen_logo"
+                    />aventones
+                </h1>
+            </header>
+
+            <main>
+                <section class="contenedor_formulario_login">
+                    <button class="boton_google">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png"
+                            alt="logo"
+                            class="imagen_google"
+                        />
+
+                        <span>Sign in with Google</span>
+                    </button>
+
+                    <p id="estilo_or">or</p>
+
+                    <form>
+                        <div class="disposicion_2 imput_login">
+                            <label for="username">Username</label>
+                            <input
+                                type="text"
+                                id="username"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="disposicion_2 imput_login">
+                            <label for="password">Password</label>
+                            <input
+                                type="text"
+                                id="password"
+                                class="elemento_imput"
+                                placeholder="**********"
+                            />
+                        </div>
+
+                        <div>
+                            <p>
+                                Not an user?
+                                <a href="register_client.html">Register now</a>
+                            </p>
+                        </div>
+
+                        <a href="search.html" class="boton_azul">Login</a>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+</html>

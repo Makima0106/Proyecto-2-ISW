@@ -1,0 +1,73 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #291515;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_search {
+    margin: 50px 100px 80px;
+}
+
+.contenedor_formulario_search {
+    border: 2px solid var(--boton_gris);
+    margin-top: 20px;
+}
+
+.seccion_busqueda {
+    padding: 15px;
+    padding-left: 130px;
+    justify-content: start;
+}
+
+.imput_formulario + .imput_formulario {
+    padding-left: 170px;
+}
+
+.combobox {
+    display: inline;
+    margin-left: 10px;
+    width: 230px;
+}
+
+.boton_azul {
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    margin-left: 30px;
+}
+
+.opciones_dias {
+    display: inline;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+strong {
+    padding: 0px 5px;
+}
+
+.tabla {
+    margin-bottom: 30px;
+}
+
+.titulo_tabla {
+    margin: 20px 0px;
+}
+
+.usuario_tabla {
+    display: flex;
+    align-items: center;
+}
+
+.imagen_usuario_tabla {
+    width: 30px;
+}

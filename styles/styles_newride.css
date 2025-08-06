@@ -1,0 +1,34 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #291515;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_newride {
+    margin: 80px 260px;
+}
+
+.imput_formulario {
+    margin: 10px 0px;
+}
+
+.imput_formulario + .imput_formulario {
+    padding-left: 50px;
+}
+
+.elemento_imput {
+    width: 343px;
+}
+
+.boton_azul {
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+}

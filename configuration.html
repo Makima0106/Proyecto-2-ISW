@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Configuration</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_configuration.css" />
+    </head>
+    <body>
+        <header class="parte_superior">
+            <h1 class="titulo_logo">
+                <img
+                    src="images/Aventones.png"
+                    alt="logo"
+                    class="imagen_logo"
+                />aventones
+            </h1>
+
+            <section class="menu_navegacion">
+                <nav>
+                    <a
+                        href="search.html"
+                        class="elemento_nav_navegacion elemento_activo"
+                        >Home</a
+                    >
+                    <a href="myrides.html" class="elemento_nav_navegacion"
+                        >Rides</a
+                    >
+                    <a href="bookings.html" class="elemento_nav_navegacion"
+                        >Bookings</a
+                    >
+                </nav>
+
+                <div class="search_navegacion">
+                    <input
+                        id="imput_menu_navegacion"
+                        class="elemento_imput"
+                        placeholder="Search..."
+                    />
+
+                    <div class="contenedor_perfil">
+                        <a href="#"
+                            ><img
+                                src="images/Usuario.png"
+                                alt="perfil"
+                                class="imagen_nav"
+                        /></a>
+
+                        <div class="opciones_perfil">
+                            <a href="login.html">Logout</a>
+                            <a href="profile.html">Profile</a>
+                            <a href="configuration.html">Configuration</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="contenedor_seccion_configuration">
+                <h2 class="titulo_seccion_pagina">Configuration</h2>
+
+                <div>
+                    <div class="imput_formulario">
+                        <label for="name">Public Name</label>
+                        <input type="text" id="name" class="elemento_imput" />
+                    </div>
+
+                    <div class="imput_formulario">
+                        <label for="bio">Public Bio</label>
+                        <textarea
+                            id="bio"
+                            name="publicbio"
+                            class="text_area"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="disposicion_1 contenedor_botones">
+                    <a href="myrides.html" class="boton_cancel">Cancel</a>
+                    <a href="#" class="boton_azul">Save</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+</html>

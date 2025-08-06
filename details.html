@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Ride Details</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_details.css" />
+    </head>
+    <body>
+        <header class="parte_superior">
+            <h1 class="titulo_logo">
+                <img
+                    src="images/Aventones.png"
+                    alt="logo"
+                    class="imagen_logo"
+                />aventones
+            </h1>
+
+            <section class="menu_navegacion">
+                <nav>
+                    <a href="search.html" class="elemento_nav_navegacion"
+                        >Home</a
+                    >
+                    <a
+                        href="myrides.html"
+                        class="elemento_nav_navegacion elemento_activo"
+                        >Rides</a
+                    >
+                    <a href="bookings.html" class="elemento_nav_navegacion"
+                        >Bookings</a
+                    >
+                </nav>
+
+                <div class="search_navegacion">
+                    <input
+                        id="imput_menu_navegacion"
+                        class="elemento_imput"
+                        placeholder="Search..."
+                    />
+
+                    <div class="contenedor_perfil">
+                        <a href="#"
+                            ><img
+                                src="images/Usuario.png"
+                                alt="perfil"
+                                class="imagen_nav"
+                        /></a>
+
+                        <div class="opciones_perfil">
+                            <a href="login.html">Logout</a>
+                            <a href="profile.html">Profile</a>
+                            <a href="configuration.html">Configuration</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="contenedor_seccion_details">
+                <h2 class="titulo_seccion_pagina">Ride Details</h2>
+
+                <form>
+                    <section>
+                        <div class="contenedor_usuario">
+                            <img
+                                src="images/Usuario.png"
+                                alt="usuario"
+                                class="imagen_usuario_detalles"
+                            />
+
+                            <p>barroyo</p>
+                        </div>
+
+                        <div class="disposicion_1 detalles_titulos">
+                            <div class="contenedor_titulo_detalles">
+                                <h3>Departure form</h3>
+                                <p class="detalle_nombre">Quesada</p>
+                            </div>
+
+                            <div class="contenedor_titulo_detalles">
+                                <h3>Arrive to</h3>
+                                <p class="detalle_nombre">Zarcero</p>
+                            </div>
+                        </div>
+
+                        <fieldset class="contenedor_dias">
+                            <legend>Days</legend>
+
+                            <div class="opciones_dias">
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Mon</label
+                                >
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Tue</label
+                                >
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Wed</label
+                                >
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Thu</label
+                                >
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Fri</label
+                                >
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Sat</label
+                                >
+                                <label class="opcion_dia"
+                                    ><input type="checkbox" />Sun</label
+                                >
+                            </div>
+                        </fieldset>
+
+                        <div class="disposicion_1 contenedor_tiempo">
+                            <div class="imput_formulario">
+                                <label for="time">Time</label>
+                                <select id="time" class="combobox">
+                                    <option value="10:00am">10:00 am</option>
+                                </select>
+                            </div>
+
+                            <div class="imput_formulario">
+                                <label for="seats">Seats</label>
+                                <input
+                                    type="number"
+                                    id="seats"
+                                    class="spinner"
+                                />
+                            </div>
+
+                            <div class="imput_formulario">
+                                <label for="fee">Fee</label>
+                                <input type="number" id="fee" class="spinner" />
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="titulo_detalles_vehiculo">
+                            Vehicle Details
+                        </h3>
+
+                        <div class="disposicion_1 contenedor_detalles_vehiculo">
+                            <div class="imput_formulario">
+                                <label for="make">Make</label>
+                                <select id="make" class="combobox">
+                                    <option value="Nissan">Nissan</option>
+                                </select>
+                            </div>
+
+                            <div class="imput_formulario">
+                                <label for="model">Model</label>
+                                <input
+                                    type="text"
+                                    id="model"
+                                    class="elemento_imput imput_detalles_vehiculo"
+                                    placeholder="Car Model"
+                                />
+                            </div>
+
+                            <div class="imput_formulario">
+                                <label for="year">Year</label>
+                                <input
+                                    type="number"
+                                    id="year"
+                                    class="spinner"
+                                />
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="disposicion_1 contenedor_botones">
+                        <a href="myrides.html" class="boton_cancel">Cancel</a>
+                        <a href="#" class="boton_azul">Request</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+</html>

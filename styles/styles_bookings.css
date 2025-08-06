@@ -1,0 +1,37 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #291515;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_bookings {
+    margin: 50px 230px 0px 230px;
+}
+
+.tabla {
+    margin: 40px 0px 300px 0px;
+}
+
+th {
+    padding: 20px;
+}
+
+td {
+    padding: 40px;
+}
+
+.usuario_tabla {
+    display: flex;
+    align-items: center;
+}
+
+.imagen_usuario_tabla {
+    width: 50px;
+}

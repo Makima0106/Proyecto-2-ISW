@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Bookings</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_bookings.css" />
+    </head>
+    <body>
+        <header class="parte_superior">
+            <h1 class="titulo_logo">
+                <img
+                    src="images/Aventones.png"
+                    alt="logo"
+                    class="imagen_logo"
+                />aventones
+            </h1>
+
+            <section class="menu_navegacion">
+                <nav>
+                    <a href="search.html" class="elemento_nav_navegacion"
+                        >Home</a
+                    >
+                    <a href="myrides.html" class="elemento_nav_navegacion"
+                        >Rides</a
+                    >
+                    <a
+                        href="bookings.html"
+                        class="elemento_nav_navegacion elemento_activo"
+                        >Bookings</a
+                    >
+                </nav>
+
+                <div class="search_navegacion">
+                    <input
+                        id="imput_menu_navegacion"
+                        class="elemento_imput"
+                        placeholder="Search..."
+                    />
+
+                    <div class="contenedor_perfil">
+                        <a href="#"
+                            ><img
+                                src="images/Usuario.png"
+                                alt="perfil"
+                                class="imagen_nav"
+                        /></a>
+
+                        <div class="opciones_perfil">
+                            <a href="login.html">Logout</a>
+                            <a href="profile.html">Profile</a>
+                            <a href="configuration.html">Configuration</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="contenedor_seccion_bookings">
+                <h2 class="titulo_seccion_pagina">Bookings</h2>
+
+                <figure>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th scope="col">User</th>
+                                <th scope="col">Ride</th>
+                                <th scope="col">Accept / Reject</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="usuario_tabla">
+                                        <img
+                                            src="images/Usuario.png"
+                                            alt="usuario"
+                                            class="imagen_usuario_tabla"
+                                        />
+                                        <span>barroyo</span>
+                                    </div>
+                                </td>
+                                <td>Ciudad Quesada - Naranjo</td>
+                                <td>
+                                    <a href="#">Accept</a> |
+                                    <a href="#">Reject</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="usuario_tabla">
+                                        <img
+                                            src="images/Usuario.png"
+                                            alt="usuario"
+                                            class="imagen_usuario_tabla"
+                                        />
+                                        <span>yluna</span>
+                                    </div>
+                                </td>
+                                <td>Fortuna - San Jose</td>
+                                <td>
+                                    <a href="#">Accept</a> |
+                                    <a href="#">Reject</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </figure>
+            </section>
+        </main>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+</html>

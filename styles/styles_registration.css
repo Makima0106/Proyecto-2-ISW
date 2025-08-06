@@ -1,0 +1,63 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #606060;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_registration {
+    margin: 0px 310px;
+}
+
+.imput_formulario {
+    padding: 3px 10px;
+}
+
+.contenedor_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link {
+    padding: 10px 12px;
+}
+
+.combobox {
+    width: 290px;
+}
+
+.contenedor_seccion_profile {
+    margin: 60px 310px;
+}
+
+.boton_azul {
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+}
+
+.boton_azul {
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.boton_1 {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+}

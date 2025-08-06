@@ -1,0 +1,25 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #606060;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_myrides {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 180px 120px;
+}
+
+.boton_azul {
+    align-self: flex-end;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 10px 0px 20px;
+}

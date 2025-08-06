@@ -1,0 +1,62 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #606060;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_login {
+    border: 2px solid var(--borde_contenido);
+    margin: 80px 180px;
+}
+
+.contenedor_formulario_login {
+    padding: 0px 33%;
+}
+
+.boton_google {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px #f0f0f0;
+    color: var(--boton_azul);
+
+    font-weight: bold;
+    font-size: 100%;
+
+    width: 300px;
+
+    padding: 10px 15px;
+    border-radius: 18px;
+    margin: 30px 0px;
+}
+
+.imagen_google {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.boton_azul {
+    border: 1px solid var(--boton_azul);
+    padding: 0px 20px;
+    margin: 30px 115px 60px;
+}
+
+#estilo_or {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.imput_login {
+    margin: 15px 0px;
+}

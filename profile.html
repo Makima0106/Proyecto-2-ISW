@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Edit Profile</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_registration.css" />
+    </head>
+    <body>
+        <header class="parte_superior">
+            <h1 class="titulo_logo">
+                <img
+                    src="images/Aventones.png"
+                    alt="logo"
+                    class="imagen_logo"
+                />aventones
+            </h1>
+
+            <section class="menu_navegacion">
+                <nav>
+                    <a
+                        href="search.html"
+                        class="elemento_nav_navegacion elemento_activo"
+                        >Home</a
+                    >
+                    <a href="myrides.html" class="elemento_nav_navegacion"
+                        >Rides</a
+                    >
+                    <a href="bookings.html" class="elemento_nav_navegacion"
+                        >Bookings</a
+                    >
+                </nav>
+
+                <div class="search_navegacion">
+                    <input
+                        id="imput_menu_navegacion"
+                        class="elemento_imput"
+                        placeholder="Search..."
+                    />
+
+                    <div class="contenedor_perfil">
+                        <a href="#"
+                            ><img
+                                src="images/Usuario.png"
+                                alt="perfil"
+                                class="imagen_nav"
+                        /></a>
+
+                        <div class="opciones_perfil">
+                            <a href="login.html">Logout</a>
+                            <a href="profile.html">Profile</a>
+                            <a href="configuration.html">Configuration</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="contenedor_seccion_profile">
+                <h2 class="titulo_seccion_pagina">Edit Profile</h2>
+
+                <form>
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="first">First Name</label>
+                            <input
+                                type="text"
+                                id="first"
+                                value="Bladimir"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="last">Last Name</label>
+                            <input
+                                type="text"
+                                id="last"
+                                value="Arroyo"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_2 imput_formulario">
+                        <label for="email">Email</label>
+                        <input
+                            type="text"
+                            id="email"
+                            value="bladimir.ad@gmail.com"
+                            class="elemento_imput"
+                        />
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="password">Password</label>
+                            <input
+                                type="text"
+                                id="password"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="repeat">Repeat Password</label>
+                            <input
+                                type="text"
+                                id="repeat"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_2 imput_formulario">
+                        <label for="address">Address</label>
+                        <input
+                            type="text"
+                            id="address"
+                            value="2km norte"
+                            class="elemento_imput"
+                        />
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="contry">Contry</label>
+                            <select id="contry" class="combobox">
+                                <option value="Costa Rica">Costa Rica</option>
+                            </select>
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="state">State</label>
+                            <input
+                                type="text"
+                                id="state"
+                                value="Alajuela"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="city">City</label>
+                            <input
+                                type="text"
+                                id="city"
+                                value="Quesada"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="text"
+                                id="phone"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_1 contenedor_botones">
+                        <a href="search.html" class="boton_cancel">Cancel</a>
+                        <a href="#" class="boton_azul">Request</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+</html>

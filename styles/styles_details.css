@@ -1,0 +1,62 @@
+:root {
+    --titulo_seccion_pagina:#949494;
+
+    --borde_imput: #b8b8b8; 
+    --borde_contenido: #3172b7;
+
+    --boton_azul: #2c82de;
+    --boton_gris: #291515;
+    --letra_boton_gris: #e3e3e3;
+
+    --background_navegcion: #f3f3f3;
+}
+
+.contenedor_seccion_details {
+    margin: 50px 260px 80px;
+}
+
+.contenedor_usuario {
+    text-align: center;
+}
+
+.imagen_usuario_detalles {
+    width: 90px;
+}
+
+.boton_azul {
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+}
+
+.combobox,
+.spinner,
+.elemento_imput {
+    display: inline;
+    margin-left: 10px;
+}
+
+.contenedor_titulo_detalles {
+    display: flex;
+    align-items: center;
+}
+
+.detalles_titulos {
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.detalle_nombre {
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.contenedor_tiempo {
+    margin: 30px 0px;
+}
+
+.boton_azul {
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+}

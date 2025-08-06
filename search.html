@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Search Rides</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_search.css" />
+    </head>
+    <body class="contenedor_grid_1">
+        <header class="parte_superior">
+            <h1 class="titulo_logo">
+                <img
+                    src="images/Aventones.png"
+                    alt="logo"
+                    class="imagen_logo"
+                />aventones
+            </h1>
+
+            <section class="menu_navegacion">
+                <nav>
+                    <a
+                        href="search.html"
+                        class="elemento_nav_navegacion elemento_activo"
+                        >Home</a
+                    >
+                    <a href="myrides.html" class="elemento_nav_navegacion"
+                        >Rides</a
+                    >
+                    <a href="bookings.html" class="elemento_nav_navegacion"
+                        >Bookings</a
+                    >
+                </nav>
+
+                <div class="search_navegacion">
+                    <input
+                        id="imput_menu_navegacion"
+                        class="elemento_imput"
+                        placeholder="Search..."
+                    />
+
+                    <div class="contenedor_perfil">
+                        <a href="#"
+                            ><img
+                                src="images/Usuario.png"
+                                alt="perfil"
+                                class="imagen_nav"
+                        /></a>
+
+                        <div class="opciones_perfil">
+                            <a href="login.html">Logout</a>
+                            <a href="profile.html">Profile</a>
+                            <a href="configuration.html">Configuration</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="contenedor_seccion_search">
+                <h2 class="titulo_seccion_pagina">Search Rides</h2>
+
+                <form class="contenedor_formulario_search">
+                    <div class="disposicion_1 seccion_busqueda">
+                        <div class="imput_formulario">
+                            <label for="from">From</label>
+                            <select id="from" class="combobox">
+                                <option value="Quesada">Quesada</option>
+                            </select>
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="to">To</label>
+                            <select id="to" class="combobox">
+                                <option value="Zarcero">Zarcero</option>
+                            </select>
+                        </div>
+
+                        <button class="boton_azul">Find rides</button>
+                    </div>
+
+                    <div class="seccion_busqueda">
+                        <label>Days</label>
+
+                        <div class="opciones_dias">
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Mon</label
+                            >
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Tue</label
+                            >
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Wed</label
+                            >
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Thu</label
+                            >
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Fri</label
+                            >
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Sat</label
+                            >
+                            <label class="opcion_dia"
+                                ><input type="checkbox" />Sun</label
+                            >
+                        </div>
+                    </div>
+                </form>
+
+                <section>
+                    <h3 class="titulo_tabla">
+                        Found from <strong>Quesada</strong> to
+                        <strong>Zarcero</strong>
+                    </h3>
+
+                    <figure>
+                        <table class="tabla">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Driver</th>
+                                    <th scope="col">From</th>
+                                    <th scope="col">To</th>
+                                    <th scope="col">Seats</th>
+                                    <th scope="col">Car</th>
+                                    <th scope="col">Fee</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="usuario_tabla">
+                                            <img
+                                                src="images/Usuario.png"
+                                                alt="usuario"
+                                                class="imagen_usuario_tabla"
+                                            />
+                                            <span>barroyo</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="#">Quesada</a></td>
+                                    <td>Alajuela</td>
+                                    <td>2</td>
+                                    <td>Nissan Pathfinder 2015</td>
+                                    <td>$5</td>
+                                    <td>
+                                        <a href="#">Request</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="usuario_tabla">
+                                            <img
+                                                src="images/Usuario.png"
+                                                alt="usuario"
+                                                class="imagen_usuario_tabla"
+                                            />
+                                            <span>barroyo</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="#">Quesada</a></td>
+                                    <td>Naranjo</td>
+                                    <td>1</td>
+                                    <td>Toyota Corolla 2020</td>
+                                    <td>$10</td>
+                                    <td>
+                                        <a href="#">Request</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="usuario_tabla">
+                                            <img
+                                                src="images/Usuario.png"
+                                                alt="usuario"
+                                                class="imagen_usuario_tabla"
+                                            />
+                                            <span>yluna</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="#">Aguas Zarcas</a></td>
+                                    <td>Naranjo</td>
+                                    <td>1</td>
+                                    <td>Ford Festiva 1990</td>
+                                    <td>--</td>
+                                    <td>
+                                        <a href="#">Request</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105620.02030416965!2d-84.32399099541853!3d10.331681121016974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1752286433495!5m2!1ses!2scr"
+                        width="1060"
+                        height="330"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>User Registration</title>
+
+        <link rel="stylesheet" href="styles/styles_general.css" />
+
+        <link rel="stylesheet" href="styles/styles_registration.css" />
+    </head>
+    <body class="contenedor_grid_1">
+        <header class="parte_superior">
+            <h1 class="titulo_logo">
+                <img
+                    src="images/Aventones.png"
+                    alt="logo"
+                    class="imagen_logo"
+                />aventones
+            </h1>
+        </header>
+
+        <main>
+            <section class="contenedor_seccion_registration">
+                <h2 class="titulo_seccion_pagina">User Registration</h2>
+
+                <form id="client_form">
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="first">First Name</label>
+                            <input
+                                type="text"
+                                id="first"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="last">Last Name</label>
+                            <input
+                                type="text"
+                                id="last"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="cedula">Cedula</label>
+                            <input
+                                type="text"
+                                id="cedula"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="email">Email</label>
+                            <input
+                                type="text"
+                                id="email"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="password">Password</label>
+                            <input
+                                type="text"
+                                id="password"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="repeat">Repeat Password</label>
+                            <input
+                                type="text"
+                                id="repeat"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_2 imput_formulario">
+                        <label for="address">Address</label>
+                        <input
+                            type="text"
+                            id="address"
+                            class="elemento_imput"
+                        />
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="contry">Contry</label>
+                            <select id="country" class="combobox">
+                                <option value="">.....</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Panama">Panama</option>
+                            </select>
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="state">State</label>
+                            <input
+                                type="text"
+                                id="state"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="disposicion_1">
+                        <div class="imput_formulario">
+                            <label for="city">City</label>
+                            <input
+                                type="text"
+                                id="city"
+                                class="elemento_imput"
+                            />
+                        </div>
+
+                        <div class="imput_formulario">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="text"
+                                id="phone"
+                                class="elemento_imput"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="contenedor_links">
+                        <p class="link">
+                            Already an user? <a href="login.html">Login here</a>
+                        </p>
+
+                        <p class="link">
+                            Register as driver? <a href="register_driver.html">Click here</a>
+                        </p>
+                    </div>
+
+                    <button type="submit" class="boton_1">Sign up</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer_principal">
+            <nav>
+                <a href="search.html" class="elemento_footer">Home</a>
+                <a href="myrides.html" class="elemento_footer">Rides</a>
+                <a href="bookings.html" class="elemento_footer">Bookings</a>
+                <a href="profile.html" class="elemento_footer">Settings</a>
+                <a href="login.html" class="elemento_footer">Login</a>
+                <a href="register_client.html" class="elemento_footer">Register</a>
+            </nav>
+
+            <p class="copyright">
+                <img
+                    src="images/copyright.png"
+                    alt="copyright"
+                    class="imagen_copyright"
+                />Aventones.com
+            </p>
+        </footer>
+    </body>
+
+    <script src="/js/registration.js"></script>
+</html>

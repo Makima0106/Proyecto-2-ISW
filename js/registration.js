@@ -5,6 +5,9 @@ if (formulario_cliente) {
     formulario_cliente.addEventListener("submit", function (e) {
         e.preventDefault();
         const nuevo_usuario = Obtener_Datos_Usuarios(e.target);
+        if (!nuevo_usuario) {
+            return;
+        }
         Agregar_Usuario(nuevo_usuario);
     });
 }
@@ -13,6 +16,9 @@ if (formulario_conductor) {
     formulario_conductor.addEventListener("submit", function (e) {
         e.preventDefault();
         const nuevo_usuario = Obtener_Datos_Usuarios(e.target);
+        if (!nuevo_usuario) {
+            return;
+        }
         Agregar_Usuario(nuevo_usuario);
     });
 }
@@ -21,6 +27,8 @@ function Obtener_Datos_Usuarios(formulario) {
     const nombre = formulario.querySelector("#first").value.trim();
     const apellido = formulario.querySelector("#last").value.trim();
     const cedula = formulario.querySelector("#cedula").value.trim();
+    const nacimiento =
+        formulario.querySelector("#birthdate").value.trim() || "";
     const email = formulario.querySelector("#email").value.trim();
     const contraseña1 = formulario.querySelector("#password").value.trim();
     const contraseña2 = formulario.querySelector("#repeat").value.trim();
@@ -34,9 +42,9 @@ function Obtener_Datos_Usuarios(formulario) {
         nombre: nombre,
         apellido: apellido,
         cedula: cedula,
+        nacimiento: nacimiento,
         email: email,
         contraseña1: contraseña1,
-        contraseña2: contraseña2,
         direccion: direccion,
         pais: pais,
         canton: canton,
@@ -45,12 +53,14 @@ function Obtener_Datos_Usuarios(formulario) {
     };
 
     if (formulario.querySelector("#plate")) {
-        const placa = formulario.querySelector("#plate").value.trim();
         const modelo = formulario.querySelector("#model").value.trim();
+        const marca = formulario.querySelector("#brand").value.trim();
+        const placa = formulario.querySelector("#plate").value.trim();
         const año = formulario.querySelector("#year").value.trim();
 
-        nuevo_usuario.placa = placa;
         nuevo_usuario.modelo = modelo;
+        nuevo_usuario.marca = marca;
+        nuevo_usuario.placa = placa;
         nuevo_usuario.año = año;
         nuevo_usuario.rol = "Conductor";
     } else {
@@ -72,17 +82,16 @@ function Obtener_Datos_Usuarios(formulario) {
         return;
     }
 
+    if (!contraseña1 || !contraseña2) {
+        alert("Por favor rellenar todos espacios dados......");
+        return;
+    }
+
     return nuevo_usuario;
 }
 
 function Agregar_Usuario(nuevo_usuario) {
-    let usuarios = [];
-
-    if (localStorage.getItem("usuarios")) {
-        usuarios = JSON.parse(localStorage.getItem("usuarios"));
-    } else {
-        usuarios = [];
-    }
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
     if (usuarios.some((u) => u.cedula === nuevo_usuario.cedula)) {
         alert("La cedula ya esta vinculada a otro usuario...");

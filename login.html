@@ -34,14 +34,14 @@
                         <span>Sign in with Google</span>
                     </button>
 
-                    <p id="estilo_or">or</p>
+                    <span id="estilo_or">or</span>
 
-                    <form>
+                    <form id="login_form">
                         <div class="disposicion_2 imput_login">
-                            <label for="username">Username</label>
+                            <label for="email">User Email</label>
                             <input
                                 type="text"
-                                id="username"
+                                id="email"
                                 class="elemento_imput"
                             />
                         </div>
@@ -49,7 +49,7 @@
                         <div class="disposicion_2 imput_login">
                             <label for="password">Password</label>
                             <input
-                                type="text"
+                                type="password"
                                 id="password"
                                 class="elemento_imput"
                                 placeholder="**********"
@@ -63,7 +63,7 @@
                             </p>
                         </div>
 
-                        <a href="search.html" class="boton_azul">Login</a>
+                        <button type="submit" class="boton_azul">Login</button>
                     </form>
                 </section>
             </main>
@@ -76,7 +76,9 @@
                 <a href="bookings.html" class="elemento_footer">Bookings</a>
                 <a href="profile.html" class="elemento_footer">Settings</a>
                 <a href="login.html" class="elemento_footer">Login</a>
-                <a href="register_client.html" class="elemento_footer">Register</a>
+                <a href="register_client.html" class="elemento_footer"
+                    >Register</a
+                >
             </nav>
 
             <p class="copyright">
@@ -88,4 +90,6 @@
             </p>
         </footer>
     </body>
+
+    <script src="js/login.js"></script>
 </html>

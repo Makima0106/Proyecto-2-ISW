@@ -89,6 +89,12 @@ html, body {
     padding-left: 10px;
 }
 
+.elemento_date {
+    width: 295px;
+    padding-right: 10px;
+    font-family: inherit;
+}
+
 a {
     color: var(--boton_azul);
 }
